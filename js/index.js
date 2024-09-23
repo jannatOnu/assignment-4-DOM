@@ -54,5 +54,27 @@ secondDonateBtn.addEventListener('click',function(){
   }
 
 })
+const thirdDonateBtn = document.getElementById("donate-btn-3");
+thirdDonateBtn.addEventListener('click',function(){
+
+//   const firstDonateInput =parseFloat(document.getElementById("donate-input-1").value);
+  const thirdDonateInput =getInputBtn("donate-input-3")
+//   const firstBalanceBtn =parseFloat(document.getElementById("balance-btn-1").innerText);
+  const thirdBalanceBtn = getDonateBtn("balance-btn-3")
+//   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
+  const mainBalance = getDonateBtn("main-balance")
+  if(isNaN(thirdDonateInput) || thirdDonateInput<=0){
+    alert ("Invalid Amount")
+    return;
+  }
+  else{
+    const thirdDonation = thirdDonateInput + thirdBalanceBtn;
+    const remainingBalance = mainBalance - thirdDonateInput
+    document.getElementById("balance-btn-3").innerText = thirdDonation.toFixed(2);
+    document.getElementById("main-balance").innerText = remainingBalance.toFixed(2);
+
+  }
+
+})
 
 
