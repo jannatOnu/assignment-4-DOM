@@ -18,7 +18,7 @@ firstDonateBtn.addEventListener('click',function(){
   const firstBalanceBtn = getDonateBtn("balance-btn-1")
 //   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
   const mainBalance = getDonateBtn("main-balance")
-  if(isNaN(firstDonateInput) || firstDonateInput<=0){
+  if(isNaN(firstDonateInput) || firstDonateInput<=0 || firstDonateInput>mainBalance ){
     alert ("Invalid Amount")
     return;
   }
@@ -52,7 +52,7 @@ secondDonateBtn.addEventListener('click',function(){
   const secondBalanceBtn = getDonateBtn("balance-btn-2")
 //   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
   const mainBalance = getDonateBtn("main-balance")
-  if(isNaN(secondDonateInput) || secondDonateInput<=0){
+  if(isNaN(secondDonateInput) || secondDonateInput<=0 || secondDonateInput>mainBalance ){
     alert ("Invalid Amount")
     return;
   }
@@ -90,7 +90,7 @@ thirdDonateBtn.addEventListener('click',function(){
   const thirdBalanceBtn = getDonateBtn("balance-btn-3")
 //   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
   const mainBalance = getDonateBtn("main-balance")
-  if(isNaN(thirdDonateInput) || thirdDonateInput<=0){
+  if(isNaN(thirdDonateInput) || thirdDonateInput<=0 || thirdDonateInput>mainBalance ){
     alert ("Invalid Amount")
     return;
   }
@@ -101,6 +101,18 @@ thirdDonateBtn.addEventListener('click',function(){
     document.getElementById("main-balance").innerText = remainingBalance.toFixed(2);
 
   }
+  const thirdDonateTitle = document.getElementById("donate-title-3").innerText
+
+  const historyItem = document.createElement("div");
+  historyItem.className = "bg-white p-4 rounded-lg border-2 "
+  historyItem.innerHTML=  `
+  <p class="text-black text-xl font-bold text-left">${thirdDonateInput.toFixed(2)} Taka is Donated for ${thirdDonateTitle} </p>
+  <p class="text-gray-400 font-semibold"> Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600(Bangladesh Standard Time) </p>
+  `
+const historySection = document.getElementById("history-section");
+
+historySection.insertBefore(historyItem,historySection.firstChild) 
+
 
 })
 
@@ -117,4 +129,12 @@ historyTab.addEventListener('click', function(){
     document.getElementById("history-section").classList.remove('hidden')
 
 })
-
+// donation-tab featurs
+const donationTabSecond = document.getElementById("Donation-tab");
+const historyTabSecond = document.getElementById("History-tab");
+donationTabSecond.addEventListener('click',function(){
+  donationTabSecond.classList.add('bg-[#B4F461]','text-lg','font-bold','text-black')
+  historyTabSecond.classList.remove('bg-[#B4F461]','text-black','text-lg','font-semibold')
+  document.getElementById("donation-fund").classList.remove('hidden')
+  document.getElementById("history-section").classList.add('hidden')
+})
