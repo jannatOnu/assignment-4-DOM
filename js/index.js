@@ -29,6 +29,17 @@ firstDonateBtn.addEventListener('click',function(){
     document.getElementById("main-balance").innerText = remainingBalance.toFixed(2);
 
   }
+  const firstDonateTitle = document.getElementById("donate-title-1").innerText
+
+  const historyItem = document.createElement("div");
+  historyItem.className = "bg-white p-4 rounded-lg border-2 "
+  historyItem.innerHTML=  `
+  <p class="text-black text-xl font-bold text-left">${firstDonateInput.toFixed(2)} Taka is ${firstDonateTitle} </p>
+  <p class="text-gray-400 font-semibold"> Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600(Bangladesh Standard Time) </p>
+  `
+const historySection = document.getElementById("history-section");
+
+historySection.insertBefore(historyItem,historySection.firstChild) 
 
 })
 
@@ -52,6 +63,22 @@ secondDonateBtn.addEventListener('click',function(){
     document.getElementById("main-balance").innerText = remainingBalance.toFixed(2);
 
   }
+  const secondDonateTitle = document.getElementById("donate-title-2").innerText
+
+  const historyItem = document.createElement("div");
+  historyItem.className = "bg-white p-6 rounded-lg border-2  "
+  historyItem.innerHTML=  `
+  <p class="text-black text-xl font-bold text-left">${secondDonateInput.toFixed(2)} Taka is ${secondDonateTitle} </p>
+  <p class="text-gray-400 font-semibold"> Date: ${new Date().toLocaleDateString()} ${new Date().toLocaleTimeString()} GMT +0600(Bangladesh Standard Time) </p>
+  `
+const historySection = document.getElementById("history-section");
+
+historySection.insertBefore(historyItem,historySection.firstChild) 
+
+
+
+
+
 
 })
 const thirdDonateBtn = document.getElementById("donate-btn-3");
@@ -85,6 +112,9 @@ historyTab.addEventListener('click', function(){
     historyTab.classList.remove('text-gray-600')
     donationTab.classList.remove('bg-[#B4F461]','text-black','text-lg','font-semibold')
     donationTab.classList.add('border-gray-200','text-gray-600')
+
+    document.getElementById("donation-fund").classList.add('hidden')
+    document.getElementById("history-section").classList.remove('hidden')
 
 })
 
