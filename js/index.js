@@ -77,4 +77,14 @@ thirdDonateBtn.addEventListener('click',function(){
 
 })
 
+// history-tab-features
+const historyTab = document.getElementById("History-tab");
+const donationTab = document.getElementById("Donation-tab");
+historyTab.addEventListener('click', function(){
+    historyTab.classList.add('bg-[#B4F461]','text-black','text-lg','font-semibold')
+    historyTab.classList.remove('text-gray-600')
+    donationTab.classList.remove('bg-[#B4F461]','text-black','text-lg','font-semibold')
+    donationTab.classList.add('border-gray-200','text-gray-600')
+
+})
 
