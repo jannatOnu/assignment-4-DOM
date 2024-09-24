@@ -8,6 +8,9 @@ function getInputBtn(id){
     return DonateInput ;
 
 }
+function getModalCard (id){
+  document.getElementById(id).showModal();
+}
 
 const firstDonateBtn = document.getElementById("donate-btn-1");
 firstDonateBtn.addEventListener('click',function(){
@@ -23,6 +26,8 @@ firstDonateBtn.addEventListener('click',function(){
     return;
   }
   else{
+   
+   getModalCard('myFirstModal');
     const firstDonation = firstDonateInput + firstBalanceBtn;
     const remainingBalance = mainBalance - firstDonateInput
     document.getElementById("balance-btn-1").innerText = firstDonation.toFixed(2);
@@ -57,6 +62,7 @@ secondDonateBtn.addEventListener('click',function(){
     return;
   }
   else{
+    getModalCard('mySecondModal');
     const secondDonation = secondDonateInput + secondBalanceBtn;
     const remainingBalance = mainBalance - secondDonateInput
     document.getElementById("balance-btn-2").innerText = secondDonation.toFixed(2);
@@ -95,6 +101,7 @@ thirdDonateBtn.addEventListener('click',function(){
     return;
   }
   else{
+    getModalCard('myThirdModal');
     const thirdDonation = thirdDonateInput + thirdBalanceBtn;
     const remainingBalance = mainBalance - thirdDonateInput
     document.getElementById("balance-btn-3").innerText = thirdDonation.toFixed(2);
@@ -138,3 +145,10 @@ donationTabSecond.addEventListener('click',function(){
   document.getElementById("donation-fund").classList.remove('hidden')
   document.getElementById("history-section").classList.add('hidden')
 })
+
+document.getElementById('blog-btn').addEventListener('click',function(){
+  window.location.href = "./blog.html";
+})
+// document.getElementById('home-btn').addEventListener('click',function(){
+//   window.location.href = "./index.html";
+// })

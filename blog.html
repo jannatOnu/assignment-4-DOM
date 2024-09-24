@@ -7,9 +7,29 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.html">
  
 </head>
 <body>
+    <header class="sticky top-0 z-10 ">
+
+        <div class="navbar  pb-10 bg-[#F9F7F3]">
+          <div class="navbar-start">
+            <a href="./index.html"  class="btn  text-xl bg-[#B4F461] text-black rounded-lg px-7 text-bold ">Home</a>
+          </div>
+          <div class="navbar-center  lg:flex hidden ">
+              <img src="./assets/logo.png" alt="" class="mr-3 hidden lg:block">
+            <h2 class="font-bold text-lg">Donate Bangladesh</h2>
+          </div>
+          <div class="navbar-end">
+           <img src="./assets/coin.png" alt="" class="mr-2">
+           <p id="main-balance" class="text-gray-400 font-medium text-[20px]">5500</p>
+           <p class="text-gray-400 font-medium text-[20px]">BDT</p>
+          </div>
+        </div>
+    
+    
+      </header>
     <div class="max-w-[1440px] mx-auto">
         <h1 class="mb-8 text-4xl font-bold">Important FAQ <i class="fa-solid fa-circle-question"></i></h1>
 
@@ -66,5 +86,6 @@
         </div>
       </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
