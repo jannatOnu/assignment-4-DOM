@@ -11,17 +11,24 @@ function getInputBtn(id){
 function getModalCard (id){
   document.getElementById(id).showModal();
 }
-
+// first donate card calculations
 const firstDonateBtn = document.getElementById("donate-btn-1");
 firstDonateBtn.addEventListener('click',function(){
-
-//   const firstDonateInput =parseFloat(document.getElementById("donate-input-1").value);
   const firstDonateInput =getInputBtn("donate-input-1")
-//   const firstBalanceBtn =parseFloat(document.getElementById("balance-btn-1").innerText);
   const firstBalanceBtn = getDonateBtn("balance-btn-1")
-//   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
   const mainBalance = getDonateBtn("main-balance")
-  if(isNaN(firstDonateInput) || firstDonateInput<=0 || firstDonateInput>mainBalance ){
+
+  
+
+
+
+  if(firstDonateInput>mainBalance){
+    alert("You do not have enough balance to donate")
+    return;
+  }
+
+
+  if(isNaN(firstDonateInput) || firstDonateInput<=0){
     alert ("Invalid Amount")
     return;
   }
@@ -48,16 +55,17 @@ historySection.insertBefore(historyItem,historySection.firstChild)
 
 })
 
+// Second donate card calculations
 const secondDonateBtn = document.getElementById("donate-btn-2");
 secondDonateBtn.addEventListener('click',function(){
-
-//   const firstDonateInput =parseFloat(document.getElementById("donate-input-1").value);
   const secondDonateInput =getInputBtn("donate-input-2")
-//   const firstBalanceBtn =parseFloat(document.getElementById("balance-btn-1").innerText);
   const secondBalanceBtn = getDonateBtn("balance-btn-2")
-//   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
   const mainBalance = getDonateBtn("main-balance")
-  if(isNaN(secondDonateInput) || secondDonateInput<=0 || secondDonateInput>mainBalance ){
+  if(secondDonateInput>mainBalance){
+    alert("You do not have enough balance to donate")
+    return;
+  }
+  if(isNaN(secondDonateInput) || secondDonateInput<=0 ){
     alert ("Invalid Amount")
     return;
   }
@@ -80,22 +88,19 @@ secondDonateBtn.addEventListener('click',function(){
 const historySection = document.getElementById("history-section");
 
 historySection.insertBefore(historyItem,historySection.firstChild) 
-
-
-
-
-
-
 })
+
+// Third donate card calculations
 const thirdDonateBtn = document.getElementById("donate-btn-3");
 thirdDonateBtn.addEventListener('click',function(){
 
-//   const firstDonateInput =parseFloat(document.getElementById("donate-input-1").value);
   const thirdDonateInput =getInputBtn("donate-input-3")
-//   const firstBalanceBtn =parseFloat(document.getElementById("balance-btn-1").innerText);
   const thirdBalanceBtn = getDonateBtn("balance-btn-3")
-//   const mainBalance = parseFloat(document.getElementById("main-balance").innerText);
   const mainBalance = getDonateBtn("main-balance")
+  if(thirdDonateInput>mainBalance){
+    alert("You do not have enough balance to donate")
+    return;
+  }
   if(isNaN(thirdDonateInput) || thirdDonateInput<=0 || thirdDonateInput>mainBalance ){
     alert ("Invalid Amount")
     return;
@@ -136,7 +141,7 @@ historyTab.addEventListener('click', function(){
     document.getElementById("history-section").classList.remove('hidden')
 
 })
-// donation-tab featurs
+// donation-tab features
 const donationTabSecond = document.getElementById("Donation-tab");
 const historyTabSecond = document.getElementById("History-tab");
 donationTabSecond.addEventListener('click',function(){
@@ -149,6 +154,4 @@ donationTabSecond.addEventListener('click',function(){
 document.getElementById('blog-btn').addEventListener('click',function(){
   window.location.href = "./blog.html";
 })
-// document.getElementById('home-btn').addEventListener('click',function(){
-//   window.location.href = "./index.html";
-// })
+

@@ -11,9 +11,11 @@
 
 </head> 
 <body class="max-w-[100%] mx-auto">
-  <header class="sticky top-0 backdrop-blur ">
+  <header class="sticky top-0 backdrop-blur bg-transparent">
+    
 
-    <div class="navbar  pb-10 bg-[#F9F7F3]">
+    <div class="navbar bg-[#F9F7F3]  pb-10   ">
+      
       <div class="navbar-start">
         <a id="blog-btn" class="btn  text-xl bg-[#B4F461] text-black rounded-lg px-7 text-bold ">Blog</a>
       </div>
@@ -26,157 +28,148 @@
        <p id="main-balance" class="text-gray-400 font-medium text-[20px]">5500</p>
        <p class="text-gray-400 font-medium text-[20px]">BDT</p>
       </div>
+   
     </div>
-
-    <div class="bg-white">
 
       <div class="flex justify-center pt-8 pb-4">
           <button id="Donation-tab" class="btn mr-7 bg-[#B4F461] text-black text-lg font-semibold">Donation</button>
           <button id="History-tab" class="btn border border-gray-200 px-5 text-gray-600">History</button>
       </div>
-    </div>
+    
+    </header>
 
-
-  </header>
   <div class="divider"></div>
 
-  <main class="mx-auto">
-  <div class=" flex justify-center mb-16">
-      
-    <div id="donation-fund"  class="grid grid-cols-1 gap-5  ">
-      <!-- card-1 -->
-    <div class="flex flex-col md:flex-row p-4 border-2 md:space-x-4 rounded-2xl  md:w-[1140px] space-y-3 md:space-y-0 ">
-      <div class=""> 
-        <img class="lg:h-[400px]" src="./assets/noakhali.png" alt="">
-      </div>
-      <div class="space-y-3 lg:space-y-6 lg:w-3/5 text-left">
-        <button class="btn">
-          <img src="./assets/coin.png" alt="" srcset="">
-          <p id="balance-btn-1" class="text-gray-400 text-base font-semibold">0</p>
-          <p class="text-gray-400 text-base font-semibold">BDT</p>
-
-        </button>
-        <h3 id="donate-title-1" class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
-        <p class=" text-gray-400 text-base font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-       <input id="donate-input-1" class="border-2 rounded-lg w-full h-[60px]" type="text" placeholder="Write Donation Amount">
-
-       <button  id="donate-btn-1" class="btn mr-7 bg-[#B4F461] text-black text-lg w-full font-semibold">Donate Now</button>
-       <dialog id="myFirstModal" class="modal">
-        <div class="modal-box text-center ">
-          <h3 class=" font-extrabold text-4xl">Congrates!</h3>
-          <div class="flex justify-center pt-6">
-            <img class="w-[50px]" src="./assets/coin.png" alt="">
-          </div>
-          <div class="py-4">
-            <p class="text-gray-400 font-bold">You Have Donate for HumanKind</p> <br>
-          <p class="font-extrabold text-xl">Successfully</p>
-          </div>
-          <div class="modal-action flex justify-center">
-            <form method="dialog">
-              <button class="btn font-bold text-gray-400">Close Confirmation</button>
-            </form>
-          </div>
+  <main class="mx-auto  ">
+    <div class=" flex justify-center mb-16">
+        
+      <div id="donation-fund"  class="grid grid-cols-1 gap-5  mx-auto">
+        <!-- card-1 -->
+      <div class="flex flex-col md:flex-row p-4 border-2 md:space-x-4 rounded-2xl  max-w-[1140px] space-y-3 md:space-y-0">
+        <div class=""> 
+          <img class="lg:h-[400px]" src="./assets/noakhali.png" alt="">
         </div>
-      </dialog>
+        <div class="space-y-3 lg:space-y-6 lg:w-3/5 text-left">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="" srcset="">
+            <p id="balance-btn-1" class="text-gray-400 text-base font-semibold">0</p>
+            <p class="text-gray-400 text-base font-semibold">BDT</p>
+  
+          </button>
+          <h3 id="donate-title-1" class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h3>
+          <p class=" text-gray-400 text-base font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+         <input id="donate-input-1" class="border-2 rounded-lg w-full h-[60px]" type="text" placeholder="Write Donation Amount">
+    
+  
+         <button  id="donate-btn-1" class="btn mr-7 bg-[#B4F461] text-black text-lg w-full font-semibold">Donate Now</button>
+         <dialog id="myFirstModal" class="modal">
+          <div class="modal-box text-center ">
+            <h3 class=" font-extrabold text-4xl">Congrates!</h3>
+            <div class="flex justify-center pt-6">
+              <img class="w-[50px]" src="./assets/coin.png" alt="">
+            </div>
+            <div class="py-4">
+              <p class="text-gray-400 font-bold">You Have Donate for HumanKind</p> <br>
+            <p class="font-extrabold text-xl">Successfully</p>
+            </div>
+            <div class="modal-action flex justify-center">
+              <form method="dialog">
+                <button class="btn font-bold text-gray-400">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+        </div>
+  
       </div>
-
+  
+      <!-- card-2 -->
+      <div class="flex flex-col md:flex-row p-4 border-2 md:space-x-4 rounded-2xl max-w-[1140px]  space-y-3 md:space-y-0 "> 
+        <div class=""> 
+          <img class="lg:h-[400px] " src="./assets/feni.png" alt="">
+        </div>
+        <div class="space-y-3 lg:space-y-7 lg:w-3/5 text-left">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="" srcset="">
+            <p id="balance-btn-2" class="text-gray-400 text-base font-semibold">600</p>
+            <p class="text-gray-400 text-base font-semibold">BDT</p>
+  
+          </button>
+          <h3 id="donate-title-2" class="text-xl font-bold">Donate for Flood at Feni, Bangladesh</h3>
+          <p class=" text-gray-400 text-base font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+         <input id="donate-input-2" class="border-2 rounded-lg w-full h-[60px]" type="text" placeholder="Write Donation Amount">
+  
+         <button id="donate-btn-2" class="btn mr-7 bg-[#B4F461] text-black text-lg w-full font-semibold">Donate Now</button>
+         <dialog id="mySecondModal" class="modal">
+          <div class="modal-box text-center ">
+            <h3 class=" font-extrabold text-4xl">Congrates!</h3>
+            <div class="flex justify-center pt-6">
+              <img class="w-[50px]" src="./assets/coin.png" alt="">
+            </div>
+            <div class="py-4">
+              <p class="text-gray-400 font-bold">You Have Donate for HumanKind</p> <br>
+            <p class="font-extrabold text-xl">Successfully</p>
+            </div>
+            <div class="modal-action flex justify-center">
+              <form method="dialog">
+                <button class="btn font-bold text-gray-400">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+        </div>
+  
+      </div> 
+  
+      <!-- card-3 -->
+  
+      <div class="flex flex-col md:flex-row p-4 border-2 md:space-x-4 rounded-2xl max-w-[1140px]  space-y-3 md:space-y-0  "> 
+        <div > 
+          <img class="lg:h-[400px]" src="./assets/quota-protest.png" alt="">
+        </div>
+        <div class="space-y-3 lg:space-y-7 lg:w-3/5 text-left">
+          <button class="btn">
+            <img src="./assets/coin.png" alt="" srcset="">
+            <p id="balance-btn-3" class="text-gray-400 text-base font-semibold">5000</p>
+            <p class="text-gray-400 text-base font-semibold">BDT</p>
+  
+          </button>
+          <h3 id="donate-title-3" class="text-xl font-bold">Aid for Injured in the Quota Movement</h3>
+          <p class=" text-gray-400 text-base font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+         <input id="donate-input-3" class="border-2 rounded-lg w-full h-[60px]" type="text" placeholder="Write Donation Amount">
+  
+         <button id="donate-btn-3" class="btn mr-7 bg-[#B4F461] text-black text-lg w-full font-semibold">Donate Now</button>
+         <dialog id="myThirdModal" class="modal">
+          <div class="modal-box text-center ">
+            <h3 class=" font-extrabold text-4xl">Congrates!</h3>
+            <div class="flex justify-center pt-6">
+              <img class="w-[50px]" src="./assets/coin.png" alt="">
+            </div>
+            <div class="py-4">
+              <p class="text-gray-400 font-bold">You Have Donate for HumanKind</p> <br>
+            <p class="font-extrabold text-xl">Successfully</p>
+            </div>
+            <div class="modal-action flex justify-center">
+              <form method="dialog">
+                <button class="btn font-bold text-gray-400">Close Confirmation</button>
+              </form>
+            </div>
+          </div>
+        </dialog>
+        </div>
+  
+      </div> 
+  
     </div>
-
-    <!-- card-2 -->
-    <div class="flex flex-col md:flex-row p-4 border-2 md:space-x-4 rounded-2xl md:w-[1140px] space-y-3 md:space-y-0  "> 
-      <div class=""> 
-        <img class="lg:h-[400px] " src="./assets/feni.png" alt="">
-      </div>
-      <div class="space-y-3 lg:space-y-7 lg:w-3/5 text-left">
-        <button class="btn">
-          <img src="./assets/coin.png" alt="" srcset="">
-          <p id="balance-btn-2" class="text-gray-400 text-base font-semibold">600</p>
-          <p class="text-gray-400 text-base font-semibold">BDT</p>
-
-        </button>
-        <h3 id="donate-title-2" class="text-xl font-bold">Donate for Flood at Feni, Bangladesh</h3>
-        <p class=" text-gray-400 text-base font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-       <input id="donate-input-2" class="border-2 rounded-lg w-full h-[60px]" type="text" placeholder="Write Donation Amount">
-
-       <button id="donate-btn-2" class="btn mr-7 bg-[#B4F461] text-black text-lg w-full font-semibold">Donate Now</button>
-       <dialog id="mySecondModal" class="modal">
-        <div class="modal-box text-center ">
-          <h3 class=" font-extrabold text-4xl">Congrates!</h3>
-          <div class="flex justify-center pt-6">
-            <img class="w-[50px]" src="./assets/coin.png" alt="">
-          </div>
-          <div class="py-4">
-            <p class="text-gray-400 font-bold">You Have Donate for HumanKind</p> <br>
-          <p class="font-extrabold text-xl">Successfully</p>
-          </div>
-          <div class="modal-action flex justify-center">
-            <form method="dialog">
-              <button class="btn font-bold text-gray-400">Close Confirmation</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
-      </div>
-
-    </div> 
-
-    <!-- card-3 -->
-
-    <div class="flex flex-col md:flex-row p-4 border-2 md:space-x-4 rounded-2xl md:w-[1140px] space-y-3 md:space-y-0  "> 
-      <div > 
-        <img class="lg:h-[400px]" src="./assets/quota-protest.png" alt="">
-      </div>
-      <div class="space-y-3 lg:space-y-7 lg:w-3/5 text-left">
-        <button class="btn">
-          <img src="./assets/coin.png" alt="" srcset="">
-          <p id="balance-btn-3" class="text-gray-400 text-base font-semibold">5000</p>
-          <p class="text-gray-400 text-base font-semibold">BDT</p>
-
-        </button>
-        <h3 id="donate-title-3" class="text-xl font-bold">Aid for Injured in the Quota Movement</h3>
-        <p class=" text-gray-400 text-base font-semibold"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-       <input id="donate-input-3" class="border-2 rounded-lg w-full h-[60px]" type="text" placeholder="Write Donation Amount">
-
-       <button id="donate-btn-3" class="btn mr-7 bg-[#B4F461] text-black text-lg w-full font-semibold">Donate Now</button>
-       <dialog id="myThirdModal" class="modal">
-        <div class="modal-box text-center ">
-          <h3 class=" font-extrabold text-4xl">Congrates!</h3>
-          <div class="flex justify-center pt-6">
-            <img class="w-[50px]" src="./assets/coin.png" alt="">
-          </div>
-          <div class="py-4">
-            <p class="text-gray-400 font-bold">You Have Donate for HumanKind</p> <br>
-          <p class="font-extrabold text-xl">Successfully</p>
-          </div>
-          <div class="modal-action flex justify-center">
-            <form method="dialog">
-              <button class="btn font-bold text-gray-400">Close Confirmation</button>
-            </form>
-          </div>
-        </div>
-      </dialog>
-      </div>
-
-    </div> 
-
-  </div>
-
-  </div>
-  <div id="history-section" class=" max-w-[1140px] mx-auto space-y-3 hidden ">
-    
-    
-  </div>
-
-    
-
-
-  </main>
-
-
-
-
-    
-    
+  
+    </div>
+    <!-- history section features -->
+   <div id="history-section" class=" max-w-[1140px] mx-auto space-y-3 hidden ">
+      
+      
+    </div>
+  
+    </main> 
   <script src="./js/index.js"></script> 
 
 </body>
