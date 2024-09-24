@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+</head>
+<body>
+    <div class="max-w-[1440px] mx-auto">
+        <h1 class="mb-8 text-4xl font-bold">Important FAQ <i class="fa-solid fa-circle-question"></i></h1>
+
+    <div class="join join-vertical w-full">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?
+        </div>
+          <div class="collapse-content">
+            <p class="text-gray-400  font-semibold">The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content text-gray-400  font-semibold">
+            <p> JavaScript provides several methods to select DOM elements. Here are some of them:
+            </p>
+            <ul class="list-disc ml-3">
+                <li>Using getElementById:</li>
+                <li>Using getElementsByClassName:</li>
+                <li>Using getElementsByTagName:</li>
+                <li>Using querySelector:</li>
+                <li>Using querySelectorAll:</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the DOM, and why is it useful?</div>
+          <div class="collapse-content text-gray-400  font-semibold">
+            <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element. <br> It's useful because it provides:</p>
+            <ul class="list-disc ml-3" > 
+                <li>Improved performance</li>
+                <li>Handles dynamic content</li>
+                <li>Simplifies code</li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?
+        </div>
+          <div class="collapse-content text-gray-400  font-semibold">
+            <p>Manipulating an element's attributes and styles in the DOM can be done using JavaScript through various properties and methods. Here's how you can do both: <br> 1. Manipulating Attributes <br> You can use the following methods to get, set, and remove attributes of an element:</p>
+            <ul class="list-disc ml-3">
+                <li>getAttribute(): Retrieves the value of a specified attribute.</li>
+                <li>setAttribute(): Sets the value of a specified attribute.</li>
+                <li>removeAttribute(): Removes a specified attribute from the element.</li>
+            </ul> <br>
+            <p>2. Manipulating Styles <br> You can directly manipulate the inline styles of an element using the style property or dynamically apply and remove CSS classes using classList. </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
